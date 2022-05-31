@@ -12,4 +12,4 @@ Invoke-ScriptInBcContainer -containerName $parameters.ContainerName -scriptblock
     }
 } -argumentList (Get-BcContainerPath -ContainerName $parameters.ContainerName -path $Parameters.appSymbolsFolder) | Out-Null
 
-Compile-AppInBcContainer @parameters -updatesymbols
+Compile-AppInBcContainer @parameters
