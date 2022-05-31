@@ -86,7 +86,8 @@
     "appDependencyProbingPaths":  [
                                       {
                                           "repo":  "https://github.com/BusinessCentralApps/ALAppExt2",
-                                          "projects":  "Modules"
+                                          "projects":  "Modules",
+                                          "release_status":  "latestBuild"
                                       }
                                   ],
     "MemoryLimit":  "16G",
