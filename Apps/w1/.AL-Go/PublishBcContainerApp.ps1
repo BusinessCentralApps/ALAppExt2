@@ -2,9 +2,12 @@ Param(
     [Hashtable]$parameters
 )
 
-Publish-BcContainerApp @parameters
-
 $filename = [System.IO.Path]::GetFileName($parameters.appFile)
+if ($filename -like "Modules-main-TestApps-*.*.*.*.zip") {
+    $parameters.includeOnlyAppIds = @()
+}
+
+Publish-BcContainerApp @parameters
 
 if ($filename -like "Microsoft_System Application_*.*.*.*.app") {
 
@@ -36,14 +39,14 @@ if ($filename -like "Microsoft_System Application_*.*.*.*.app") {
 
     Write-Host "Publishing Base Application"
     $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Base Application.app"
+    $parameters.includeOnlyAppIds = @()
     Publish-BcContainerApp @parameters
 
     Write-Host "Publishing Application"
     $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Application.app"
-    $parameters.includeOnlyAppIds = @()
     Publish-BcContainerApp @parameters
 }
-elseif ($filename -like "Microsoft_System Application Test Library_*.*.*.*.app" -or $filename -like "Modules-main-TestApps-*.*.*.*.zip") {
+elseif ($filename -like "Modules-main-TestApps-*.*.*.*.zip") {
     Write-Host "Publishing Tests-TestLibraries"
     $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Tests-TestLibraries.app"
     Publish-BcContainerApp @parameters
