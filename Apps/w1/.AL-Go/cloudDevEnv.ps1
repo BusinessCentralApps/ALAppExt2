@@ -90,6 +90,9 @@ CreateDevEnv `
     -reuseExistingEnvironment:$reuseExistingEnvironment `
     -baseFolder $baseFolder
 }
+catch {
+    Write-Host -ForegroundColor Red $_.Exception.Message
+}
 finally {
     if ($fromVSCode) {
         Read-Host "Press ENTER to close this window"

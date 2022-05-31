@@ -12,12 +12,4 @@ Invoke-ScriptInBcContainer -containerName $parameters.ContainerName -scriptblock
     }
 } -argumentList (Get-BcContainerPath -ContainerName $parameters.ContainerName -path $Parameters.appSymbolsFolder) | Out-Null
 
-Get-ChildItem $parameters.appSymbolsFolder -recurse | Out-Host
-
-Write-Host "App symbols before:"
-Get-BcContainerAppInfo -ContainerName $parameters.ContainerName | Out-Host
-
 Compile-AppInBcContainer @parameters -updatesymbols
-
-Write-Host "App Symbols after:"
-Get-ChildItem $parameters.appSymbolsFolder -recurse | Out-Host
