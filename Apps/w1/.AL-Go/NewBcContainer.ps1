@@ -19,27 +19,3 @@ $installedApps | ForEach-Object {
 }
 
 Invoke-ScriptInBcContainer -containerName $parameters.ContainerName -scriptblock { $progressPreference = 'SilentlyContinue' }
-
-# Copy necessary apps to my folder
-Invoke-ScriptInBcContainer -containerName $parameters.ContainerName -scriptblock {
-    $baseApp = "C:\Applications.*\Microsoft_Base Application_*.*.*.*.app"
-    if (-not (Test-Path $baseApp)) {
-        $baseApp = "C:\Applications\BaseApp\Source\Microsoft_Base Application.app"
-    }
-    Write-Host "Copying Base Application to my path"
-    Copy-Item -Path (Get-Item $baseApp).FullName -Destination "c:\run\my\Microsoft_Base Application.app"
-
-    $application = "C:\Applications.*\Microsoft_Application_*.*.*.*.app"
-    if (-not (Test-Path $application)) {
-        $application = "C:\Applications\Application\Source\Microsoft_Application.app"
-    }
-    Write-Host "Copying Application to my path"
-    Copy-Item -Path (Get-Item $application).FullName -Destination "c:\run\my\Microsoft_Application.app"
-
-    $testLibrariesApp = "C:\Applications.*\Microsoft_Tests-TestLibraries_*.*.*.*.app"
-    if (-not (Test-Path $testLibrariesApp)) {
-        $testLibrariesApp = "C:\Applications\BaseApp\Test\Microsoft_Tests-TestLibraries.app"
-    }
-    Write-Host "Copying Tests-TestLibraries to my path"
-    Copy-Item -Path (Get-Item $testLibrariesApp).FullName -Destination "c:\run\my\Microsoft_Tests-TestLibraries.app"
-}
