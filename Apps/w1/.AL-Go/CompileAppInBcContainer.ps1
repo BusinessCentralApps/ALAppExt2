@@ -2,6 +2,8 @@ Param(
     [Hashtable] $parameters
 )
 
+Get-ChildItem $parameters.appSymbolsFolder -recurse | Out-Host
+
 Invoke-ScriptInBcContainer -containerName $parameters.ContainerName -scriptblock { Param([string]$packagesFolder)
     if (!(Test-Path (Join-Path $packagesFolder "Microsoft_Application.app"))) {
         if (!(Test-Path -Path $packagesFolder -PathType Container)) {
