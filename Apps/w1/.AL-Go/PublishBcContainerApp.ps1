@@ -6,8 +6,6 @@ Publish-BcContainerApp @parameters
 
 $filename = [System.IO.Path]::GetFileName($parameters.appFile)
 
-Write-Host "PUBLISHING: '$filename'"
-
 if ($filename -like "Microsoft_System Application_*.*.*.*.app") {
 
     Copy-Item -Path $parameters.appFile -Destination (Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my")
@@ -45,7 +43,7 @@ if ($filename -like "Microsoft_System Application_*.*.*.*.app") {
     $parameters.includeOnlyAppIds = @()
     Publish-BcContainerApp @parameters
 }
-elseif ($filename -like "Microsoft_System Application Test Library_*.*.*.*.app") {
+elseif ($filename -like "Microsoft_System Application Test Library_*.*.*.*.app" -or $filename -like "Modules-main-TestApps-*.*.*.*.zip") {
     Write-Host "Publishing Tests-TestLibraries"
     $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Tests-TestLibraries.app"
     Publish-BcContainerApp @parameters
