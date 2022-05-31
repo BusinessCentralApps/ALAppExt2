@@ -1,0 +1,38 @@
+﻿[
+    {
+        "Method":  "TestMostPopularItemHeadline",
+        "CodeunitName":  "Test Essential Bus. Headlines"
+    },
+    {
+        "Method":  "TestBusiestResourceHeadline",
+        "CodeunitName":  "Test Essential Bus. Headlines"
+    },
+    {
+        "Method":  "TestLargestOrderHeadline",
+        "CodeunitName":  "Test Essential Bus. Headlines"
+    },
+    {
+        "Method":  "TestLargestSaleHeadline",
+        "CodeunitName":  "Test Essential Bus. Headlines"
+    },
+    {
+        "Method":  "TestSalesIncreaseHeadline",
+        "CodeunitName":  "Test Essential Bus. Headlines"
+    },
+    {
+        "Method":  "TestTopCustomerHeadline",
+        "CodeunitName":  "Test Essential Bus. Headlines"
+    },
+    {
+        "Method":  "TestRecentlyOverdueInvoiceHeadlineWithOneInvoice",
+        "CodeunitName":  "Test Essential Bus. Headlines"
+    },
+    {
+        "Method":  "TestRecentlyOverdueInvoiceHeadlineWithTwoInvoice",
+        "CodeunitName":  "Test Essential Bus. Headlines"
+    },
+    {
+        "Method":  "TestRecentlyOverdueInvoiceHeadlineWithFiveInvoice",
+        "CodeunitName":  "Test Essential Bus. Headlines"
+    }
+]

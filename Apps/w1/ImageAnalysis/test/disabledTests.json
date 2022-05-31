@@ -1,0 +1,18 @@
+﻿[
+    {
+        "Method":  "TestPopulateAttributeAndCategory",
+        "CodeunitName":  "Item Attr Populate Test"
+    },
+    {
+        "Method":  "TestPopulateNothingLowConfidence",
+        "CodeunitName":  "Item Attr Populate Test"
+    },
+    {
+        "Method":  "TestPopulateAgeAndGender",
+        "CodeunitName":  "Contact Pic Analyzer Test"
+    },
+    {
+        "Method":  "TestPopulate2Faces",
+        "CodeunitName":  "Contact Pic Analyzer Test"
+    }
+]

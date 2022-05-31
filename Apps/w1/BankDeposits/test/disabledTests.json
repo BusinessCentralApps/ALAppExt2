@@ -1,0 +1,114 @@
+﻿[
+    {
+        "Method":  "OnAfterGetRecordCustLedgerEntryDeposit",
+        "CodeunitName":  "UT Report Bank Deposit"
+    },
+    {
+        "Method":  "OnAfterGetRecordVendLedgerEntryDeposit",
+        "CodeunitName":  "UT Report Bank Deposit"
+    },
+    {
+        "Method":  "OnAfterGetRecordVendLedgerEntryDepositTestReport",
+        "CodeunitName":  "UT Report Bank Deposit"
+    },
+    {
+        "Method":  "OnAfterGetRecordCustLedgerEntryDepositTestReport",
+        "CodeunitName":  "UT Report Bank Deposit"
+    },
+    {
+        "Method":  "OnAfterGetRecordApplyCustLedgerDepositTestReport",
+        "CodeunitName":  "UT Report Bank Deposit"
+    },
+    {
+        "Method":  "OnAfterGetRecordApplyVendLedgerDepositTestReport",
+        "CodeunitName":  "UT Report Bank Deposit"
+    },
+    {
+        "Method":  "OnAfterGetRecordDimLoopTypeBankDepositTestReport",
+        "CodeunitName":  "UT Report Bank Deposit"
+    },
+    {
+        "Method":  "OnAfterGetRecordDimLoopTypeGLDepositTestReport",
+        "CodeunitName":  "UT Report Bank Deposit"
+    },
+    {
+        "Method":  "OnAfterGetRecordDimLoopTypeGLDepositTestReport2",
+        "CodeunitName":  "UT Report Bank Deposit"
+    },
+    {
+        "Method":  "OnActionDimensionsPostedBankDepositList",
+        "CodeunitName":  "UT Page Bank Deposit"
+    },
+    {
+        "Method":  "OnActionDimensionsPostedBankDepositSubform",
+        "CodeunitName":  "UT Page Bank Deposit"
+    },
+    {
+        "Method":  "OnActionAccountLedgerEntriesPostedBankDepositSubform",
+        "CodeunitName":  "UT Page Bank Deposit"
+    },
+    {
+        "Method":  "OnActionDimensionsPostedBankDeposit",
+        "CodeunitName":  "UT Page Bank Deposit"
+    },
+    {
+        "Method":  "OnActionDimensionsDepositSubform",
+        "CodeunitName":  "UT Page Bank Deposit"
+    },
+    {
+        "Method":  "OnActionAccountLedgerEntriesDepositSubform",
+        "CodeunitName":  "UT Page Bank Deposit"
+    },
+    {
+        "Method":  "OnActionApplyEntriesDepositSubform",
+        "CodeunitName":  "UT Page Bank Deposit"
+    },
+    {
+        "Method":  "OnActionPostDeposit",
+        "CodeunitName":  "UT Page Bank Deposit"
+    },
+    {
+        "Method":  "OnActionPostAndPrintDeposit",
+        "CodeunitName":  "UT Page Bank Deposit"
+    },
+    {
+        "Method":  "OnActionDimensionsDeposit",
+        "CodeunitName":  "UT Page Bank Deposit"
+    },
+    {
+        "Method":  "GLBankDeposit",
+        "CodeunitName":  "Bank Deposit Posting Tests"
+    },
+    {
+        "Method":  "DoNotPostBankDepositAsLumpSum",
+        "CodeunitName":  "Bank Deposit Posting Tests"
+    },
+    {
+        "Method":  "PostBankDepositAsLumpSum",
+        "CodeunitName":  "Bank Deposit Posting Tests"
+    },
+    {
+        "Method":  "FullyAppliedSalesInvoice",
+        "CodeunitName":  "Bank Deposit Posting Tests"
+    },
+    {
+        "Method":  "ErrorOnPostVendPaymentBankDepositWithDefaultDimension",
+        "CodeunitName":  "Bank Deposit Posting Tests"
+    },
+    {
+        "Method":  "ErrorOnPostCustPaymentBankDepositWithDefaultDimension",
+        "CodeunitName":  "Bank Deposit Posting Tests"
+    },
+    {
+        "Method":  "PostedBankDepositAndBankAccLedger",
+        "CodeunitName":  "Bank Deposit Posting Tests"
+    },
+    {
+        "Method":  "BankDepositWithNewGenJournalBatch",
+        "CodeunitName":  "Bank Deposit Posting Tests"
+    },
+    {
+        "Method":  "PostBankDepositWithLink",
+        "CodeunitName":  "Bank Deposit Posting Tests"
+    }
+]

@@ -1,0 +1,62 @@
+﻿[
+    {
+        "Method":  "TestCheckInvoiceFromPageWhenNotEnabled",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestCheckInvoiceFromPage",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestCheckOrderFromPage",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestNoLPPForSalesOrderOnLateDueDate",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestNoLPPForSalesQuoteOnLateDueDate",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestNoLPPForSalesInvoiceOnLateDueDate",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestCreateMyModelSunshine",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestCreateMyModelWhenNotEnoughDataAvailable",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestCreateMyModelWhenQualityWorseThanExisting",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestBackgroundTaskOnCompanyOpen",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestEvaluateMyModelSunshine",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestIsEnoughDataAvailable",
+        "CodeunitName":  "LP Prediction Test"
+    },
+    {
+        "Method":  "TestLPPQuery",
+        "CodeunitName":  "LP ML Input Data Test"
+    },
+    {
+        "Method":  "TestLPMLInputData",
+        "CodeunitName":  "LP ML Input Data Test"
+    },
+    {
+        "Method":  "TestResetAndFillFeaturesTableBasedOnIncrement",
+        "CodeunitName":  "LP ML Input Data Test"
+    }
+]

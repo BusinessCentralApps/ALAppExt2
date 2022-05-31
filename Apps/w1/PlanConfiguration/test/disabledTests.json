@@ -1,0 +1,34 @@
+﻿[
+    {
+        "Method":  "TestEssentialUserIsNotSuperIfSuperExistsInFirstLoginFlow",
+        "CodeunitName":  "Azure AD Plan Module Test"
+    },
+    {
+        "Method":  "TestRefreshUserPlanAssignments",
+        "CodeunitName":  "Azure AD Plan Module Test"
+    },
+    {
+        "Method":  "TestRemovePlanFromUserAtRefresh",
+        "CodeunitName":  "Azure AD Plan Module Test"
+    },
+    {
+        "Method":  "TestRemoveUserGroupsFromUserAtRefresh",
+        "CodeunitName":  "Azure AD Plan Module Test"
+    },
+    {
+        "Method":  "TestRemoveExtraUserGroupsFromUserAtRefresh",
+        "CodeunitName":  "Azure AD Plan Module Test"
+    },
+    {
+        "Method":  "TestUpdateUserPlansAllUsers",
+        "CodeunitName":  "Azure AD Plan Module Test"
+    },
+    {
+        "Method":  "VerifyDelegatedAdminUserGroups",
+        "CodeunitName":  "Custom User Group Test"
+    },
+    {
+        "Method":  "AddUserGroupTpDelegatedAdminPlan",
+        "CodeunitName":  "Custom User Group Test"
+    }
+]

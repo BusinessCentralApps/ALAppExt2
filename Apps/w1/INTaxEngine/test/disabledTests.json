@@ -1,0 +1,118 @@
+﻿[
+    {
+        "Method":  "TestCheckConditionForStringEqual",
+        "CodeunitName":  "Condition Mgmt Tests"
+    },
+    {
+        "Method":  "TestCheckConditionForStringNotEqual",
+        "CodeunitName":  "Condition Mgmt Tests"
+    },
+    {
+        "Method":  "TestCheckConditionForStringBeginWith",
+        "CodeunitName":  "Condition Mgmt Tests"
+    },
+    {
+        "Method":  "TestCheckConditionForDecimal",
+        "CodeunitName":  "Condition Mgmt Tests"
+    },
+    {
+        "Method":  "TestCheckConditionForBoolean",
+        "CodeunitName":  "Condition Mgmt Tests"
+    },
+    {
+        "Method":  "TestCheckConditionForOption",
+        "CodeunitName":  "Condition Mgmt Tests"
+    },
+    {
+        "Method":  "TestCheckConditionForDate",
+        "CodeunitName":  "Condition Mgmt Tests"
+    },
+    {
+        "Method":  "TestInitializeTaxRates",
+        "CodeunitName":  "Tax Rate Setup Matrix Tests"
+    },
+    {
+        "Method":  "TestUpdateTaxRates",
+        "CodeunitName":  "Tax Rate Setup Matrix Tests"
+    },
+    {
+        "Method":  "TestUpdateLinkdAttributeOnTaxRates",
+        "CodeunitName":  "Tax Rate Setup Matrix Tests"
+    },
+    {
+        "Method":  "TestUpdateFromAndToRangeAttributeOnTaxRates",
+        "CodeunitName":  "Tax Rate Setup Matrix Tests"
+    },
+    {
+        "Method":  "TestUpdateFromAndToRangeAttributeForError",
+        "CodeunitName":  "Tax Rate Setup Matrix Tests"
+    },
+    {
+        "Method":  "TestUpdateTaxAttributeFactbox",
+        "CodeunitName":  "Tax Rate Setup Matrix Tests"
+    },
+    {
+        "Method":  "TestUpdateCaseID",
+        "CodeunitName":  "Tax Transaction Value Tests"
+    },
+    {
+        "Method":  "TestUpdateTaxComponent",
+        "CodeunitName":  "Tax Document Stats Mgmt Tests"
+    },
+    {
+        "Method":  "TestClearBuffer",
+        "CodeunitName":  "Tax Document Stats Mgmt Tests"
+    },
+    {
+        "Method":  "TestTransferTransactionValue",
+        "CodeunitName":  "Tax Document GL Posting Tests"
+    },
+    {
+        "Method":  "TestGetAttributeColumNameForAttribute",
+        "CodeunitName":  "Tax Document GL Posting Tests"
+    },
+    {
+        "Method":  "TestGetAttributeColumNameForComponent",
+        "CodeunitName":  "Tax Document GL Posting Tests"
+    },
+    {
+        "Method":  "TestGetAttributeColumNameForColumn",
+        "CodeunitName":  "Tax Document GL Posting Tests"
+    },
+    {
+        "Method":  "TestGetTransactionDatatypeforColumn",
+        "CodeunitName":  "Tax Document GL Posting Tests"
+    },
+    {
+        "Method":  "TestGetTransactionDatatypeforAttribute",
+        "CodeunitName":  "Tax Document GL Posting Tests"
+    },
+    {
+        "Method":  "TestGetTransactionRecordID",
+        "CodeunitName":  "Tax Document GL Posting Tests"
+    },
+    {
+        "Method":  "TestGetTransactionDocument",
+        "CodeunitName":  "Tax Document GL Posting Tests"
+    },
+    {
+        "Method":  "TestCreateTaxConfigFromUI",
+        "CodeunitName":  "Json Exchange and Exec. Tests"
+    },
+    {
+        "Method":  "TestUseCaseExecution",
+        "CodeunitName":  "Json Exchange and Exec. Tests"
+    },
+    {
+        "Method":  "TestUseCasePosting",
+        "CodeunitName":  "Json Exchange and Exec. Tests"
+    },
+    {
+        "Method":  "TestTaxInformationFactbox",
+        "CodeunitName":  "Json Exchange and Exec. Tests"
+    },
+    {
+        "Method":  "TestUseCasePostingExecution",
+        "CodeunitName":  "Json Exchange and Exec. Tests"
+    }
+]

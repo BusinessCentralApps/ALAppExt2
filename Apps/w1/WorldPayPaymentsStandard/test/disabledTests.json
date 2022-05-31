@@ -1,0 +1,78 @@
+﻿[
+    {
+        "Method":  "TestCreateNewPaymentService",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestExistingPaymentServicesAreShownInTheList",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestSetupPaymentService",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestEnablingWhenClosingSetupPage",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestCannotEnableWithoutAccountID",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestCannotBlankAccountIDWhenEnabled",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestEditWorldPayTemplate",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestResetToDefaultWorldPayTemplate",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestResetToDefaultWorldPayTemplateInDemoCompany",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestServiceConnectionListShowsDisabledPaymentServices",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestServiceConnectionListShowsEnabledPaymentServices",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestServiceConnectionListOpensPaymentServicesSetupCard",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestSelectingStandardWorldPayService",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestOnlyOneAlwaysIncludedStandardWorldPayService",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestCoverLetterPaymentLink",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestYourReferenceIsIncludedInTheLink",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestTermsOfService",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestInsertDemoWorldPayAccount",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    },
+    {
+        "Method":  "TestInsertDemoWorldPayAccountDoesNothingIfTheAccountExist",
+        "CodeunitName":  "MS - WorldPay Standard Tests"
+    }
+]

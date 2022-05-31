@@ -1,0 +1,18 @@
+﻿[
+    {
+        "Method":  "TestSaveRecord",
+        "CodeunitName":  "Test Data Archive Impl."
+    },
+    {
+        "Method":  "TestSaveRecords",
+        "CodeunitName":  "Test Data Archive Impl."
+    },
+    {
+        "Method":  "TestSaveSaveAsCSV",
+        "CodeunitName":  "Test Data Archive Impl."
+    },
+    {
+        "Method":  "TestSaveSaveAsExcel",
+        "CodeunitName":  "Test Data Archive Impl."
+    }
+]
