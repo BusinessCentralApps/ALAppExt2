@@ -5,6 +5,9 @@ Param(
 Publish-BcContainerApp @parameters
 
 $filename = [System.IO.Path]::GetFileName($parameters.appFile)
+
+Write-Host "PUBLISHING: '$filename'"
+
 if ($filename -like "Microsoft_System Application_*.*.*.*.app") {
 
     Copy-Item -Path $parameters.appFile -Destination (Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my")
