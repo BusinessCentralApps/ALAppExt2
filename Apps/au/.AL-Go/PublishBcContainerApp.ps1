@@ -2,6 +2,8 @@ Param(
     [Hashtable]$parameters
 )
 
+$parameters.appfile | Out-Host
+
 $filename = [System.IO.Path]::GetFileName($parameters.appFile)
 if ($filename -like "Modules-main-TestApps-*.*.*.*.zip") {
     $parameters.includeOnlyAppIds = @()
