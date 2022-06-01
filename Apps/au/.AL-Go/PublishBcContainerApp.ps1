@@ -9,7 +9,9 @@ if ($filename -like "Modules-main-TestApps-*.*.*.*.zip") {
 
 Publish-BcContainerApp @parameters
 
-if ($filename -like "Microsoft_System Application_*.*.*.*.app") {
+Write-Host "FILENAME: $filename"
+
+if ($filename -like "Microsoft_System Application_*.*.*.*.app" -or $filename -like "Modules-main-Apps-*.*.*.*.zip") {
 
     Copy-Item -Path $parameters.appFile -Destination (Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my")
 
