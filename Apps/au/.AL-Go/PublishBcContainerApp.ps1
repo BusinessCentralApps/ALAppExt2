@@ -2,6 +2,8 @@ Param(
     [Hashtable]$parameters
 )
 
+$parameters.appfile | Out-Host
+
 $systemAppFile = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileName($parameters.appFile) -like "Microsoft_System Application_*.*.*.*.app" }
 if ($systemAppFile) {
     $includeOnlyAppIds = $parameters.includeOnlyAppIds
