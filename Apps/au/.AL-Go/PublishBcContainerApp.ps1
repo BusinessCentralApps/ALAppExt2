@@ -48,9 +48,11 @@ if ($systemAppFile) {
     $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Application.app"
     Publish-BcContainerApp @parameters
 
-    $parameters.AppFile = $remainingAppFiles
-    $parameters.includeOnlyAppIds = $includeOnlyAppIds
-    Publish-BcContainerApp @parameters
+    if ($remainingAppFiles) {
+        $parameters.AppFile = $remainingAppFiles
+        $parameters.includeOnlyAppIds = $includeOnlyAppIds
+        Publish-BcContainerApp @parameters
+    }
 }
 elseif ($ModulesTestApps) {
     Publish-BcContainerApp @parameters
@@ -62,5 +64,3 @@ elseif ($ModulesTestApps) {
 else {
     Publish-BcContainerApp @parameters
 }
-
-

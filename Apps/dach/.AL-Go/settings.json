@@ -14,5 +14,6 @@
                                       }
                                   ],
     "MemoryLimit":  "16G",
+    "RepoVersion":  "20.1",
     "enablePerTenantExtensionCop":  false
 }
