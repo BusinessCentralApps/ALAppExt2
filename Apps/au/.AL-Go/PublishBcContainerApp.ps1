@@ -4,7 +4,7 @@ Param(
 
 $parameters.appfile | Out-Host
 
-$systemAppFile = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileName($parameters.appFile) -like "Microsoft_System Application_*.*.*.*.app" }
+$systemAppFile = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileName($_) -like "Microsoft_System Application_*.*.*.*.app" }
 if ($systemAppFile) {
     $includeOnlyAppIds = $parameters.includeOnlyAppIds
     $remainingAppFiles = $parameters.appfile | Where-Object { $_ -ne $systemAppFile }
