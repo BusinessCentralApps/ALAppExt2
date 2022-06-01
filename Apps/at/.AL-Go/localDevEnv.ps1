@@ -155,7 +155,7 @@ CreateDevEnv `
     -InsiderSasToken $insiderSasToken
 }
 catch {
-    Write-Host -ForegroundColor Red $_.Exception.Message
+    Write-Host -ForegroundColor Red "Error: $($_.Exception.Message)`nStacktrace: $($_.scriptStackTrace)"
 }
 finally {
     if ($fromVSCode) {
