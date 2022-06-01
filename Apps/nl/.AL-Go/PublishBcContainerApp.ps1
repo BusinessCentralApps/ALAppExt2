@@ -55,9 +55,12 @@ if ($systemAppFile) {
     }
 }
 elseif ($ModulesTestApps) {
+    $includeOnlyAppIds = $parameters.includeOnlyAppIds
+    $parameters.includeOnlyAppIds = @()
     Publish-BcContainerApp @parameters
 
     Write-Host "Publishing Tests-TestLibraries"
+    $parameters.includeOnlyAppIds = $includeOnlyAppIds
     $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Tests-TestLibraries.app"
     Publish-BcContainerApp @parameters
 }
