@@ -6,10 +6,11 @@ $filename = [System.IO.Path]::GetFileName($parameters.appFile)
 if ($filename -like "Modules-main-TestApps-*.*.*.*.zip") {
     $parameters.includeOnlyAppIds = @()
 }
+Write-Host "Publish filename: $filename"
 
 Publish-BcContainerApp @parameters
 
-if ($filename -like "Microsoft_System Application_*.*.*.*.app") {
+if ($filename -like "Microsoft_System Application_*.*.*.*.app" -or $filename -like "Modules-main-Apps-*.*.*.*.zip") {
 
     Copy-Item -Path $parameters.appFile -Destination (Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my")
 

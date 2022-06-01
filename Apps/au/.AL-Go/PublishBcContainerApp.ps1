@@ -6,10 +6,9 @@ $filename = [System.IO.Path]::GetFileName($parameters.appFile)
 if ($filename -like "Modules-main-TestApps-*.*.*.*.zip") {
     $parameters.includeOnlyAppIds = @()
 }
+Write-Host "Publish filename: $filename"
 
 Publish-BcContainerApp @parameters
-
-Write-Host "FILENAME: $filename"
 
 if ($filename -like "Microsoft_System Application_*.*.*.*.app" -or $filename -like "Modules-main-Apps-*.*.*.*.zip") {
 
