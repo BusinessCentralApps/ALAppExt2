@@ -5,6 +5,7 @@ Param(
 $parameters.appfile | Out-Host
 
 $systemAppFile = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileName($_) -like "Microsoft_System Application_*.*.*.*.app" }
+$ModulesTestApps = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileName($_) -like "Modules-main-TestApps-*.*.*.*.zip" }
 if ($systemAppFile) {
     $includeOnlyAppIds = $parameters.includeOnlyAppIds
     $remainingAppFiles = $parameters.appfile | Where-Object { $_ -ne $systemAppFile }
@@ -51,12 +52,15 @@ if ($systemAppFile) {
     $parameters.includeOnlyAppIds = $includeOnlyAppIds
     Publish-BcContainerApp @parameters
 }
+elseif ($ModulesTestApps) {
+    Publish-BcContainerApp @parameters
+
+    Write-Host "Publishing Tests-TestLibraries"
+    $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Tests-TestLibraries.app"
+    Publish-BcContainerApp @parameters
+}
 else {
     Publish-BcContainerApp @parameters
 }
 
-#elseif ($filename -like "Modules-main-TestApps-*.*.*.*.zip") {
-#    Write-Host "Publishing Tests-TestLibraries"
-#    $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Tests-TestLibraries.app"
-#    Publish-BcContainerApp @parameters
-#}
+
