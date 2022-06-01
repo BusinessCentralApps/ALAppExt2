@@ -1,4 +1,4 @@
-codeunit 139870 "RM Cont/Todo, Edit Tests"
+codeunit 139870 "RM Cont/Todo - Edit Tests"
 {
     Subtype = Test;
     TestPermissions = Restrictive;
@@ -69,7 +69,7 @@ codeunit 139870 "RM Cont/Todo, Edit Tests"
         VerifyContactRelatedRecordsDeleted(Contact."No.");
     end;
 
-     [Test]
+    [Test]
     [HandlerFunctions('CompanyDetailsOnChangeModalPageHandler')]
     [Scope('OnPrem')]
     procedure NameAssistEditOnCompanyContactCardWithModifyPermissions()

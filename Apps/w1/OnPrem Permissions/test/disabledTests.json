@@ -1,27 +1,27 @@
 ﻿[
     {
         "Method":  "NewContactPersonTypeWithCompanyNoInRMCONTPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
+        "CodeunitName":  "RM Cont/Todo - Edit Tests"
     },
     {
         "Method":  "DeleteContactTypePerson",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
+        "CodeunitName":  "RM Cont/Todo - Edit Tests"
     },
     {
         "Method":  "DeleteContactTypeCompany",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
+        "CodeunitName":  "RM Cont/Todo - Edit Tests"
     },
     {
         "Method":  "NameAssistEditOnCompanyContactCardWithModifyPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
+        "CodeunitName":  "RM Cont/Todo - Edit Tests"
     },
     {
         "Method":  "CompanyNameAssistEditOnPersonContactCardWithoutPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
+        "CodeunitName":  "RM Cont/Todo - Edit Tests"
     },
     {
         "Method":  "CompanyNameAssistEditOnPersonContactCardWithPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
+        "CodeunitName":  "RM Cont/Todo - Edit Tests"
     },
     {
         "Method":  "NameAssistEditOnPersonContactCardWithoutModifyPermissions",
@@ -50,53 +50,5 @@
     {
         "Method":  "PurchaseInvoiceLineLimitedPermissionCreation",
         "CodeunitName":  "P. \u0026 P. Permissions Tests"
-    },
-    {
-        "Method":  "NewContactPersonTypeWithCompanyNoInRMCONTPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
-    },
-    {
-        "Method":  "DeleteContactTypePerson",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
-    },
-    {
-        "Method":  "DeleteContactTypeCompany",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
-    },
-    {
-        "Method":  "NameAssistEditOnCompanyContactCardWithModifyPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
-    },
-    {
-        "Method":  "CompanyNameAssistEditOnPersonContactCardWithoutPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
-    },
-    {
-        "Method":  "CompanyNameAssistEditOnPersonContactCardWithPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
-    },
-    {
-        "Method":  "NewContactPersonTypeWithCompanyNoInRMCONTPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
-    },
-    {
-        "Method":  "DeleteContactTypePerson",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
-    },
-    {
-        "Method":  "DeleteContactTypeCompany",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
-    },
-    {
-        "Method":  "NameAssistEditOnCompanyContactCardWithModifyPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
-    },
-    {
-        "Method":  "CompanyNameAssistEditOnPersonContactCardWithoutPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
-    },
-    {
-        "Method":  "CompanyNameAssistEditOnPersonContactCardWithPermissions",
-        "CodeunitName":  "RM Cont/Todo, Edit Tests"
     }
 ]
