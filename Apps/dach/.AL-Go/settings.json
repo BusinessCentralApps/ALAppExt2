@@ -1,0 +1,23 @@
+﻿{
+    "country":  "de",
+    "appFolders":  [
+                       "Onprem Permissions DACH\\app"
+                   ],
+    "testFolders":  [
+
+                    ],
+    "appDependencyProbingPaths":  [
+                                      {
+                                          "projects":  "Modules",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      },
+                                      {
+                                          "projects":  "Apps\\W1",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      }
+                                  ],
+    "MemoryLimit":  "16G",
+    "enablePerTenantExtensionCop":  false
+}

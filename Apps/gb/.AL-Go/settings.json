@@ -1,0 +1,26 @@
+﻿{
+    "country":  "gb",
+    "appFolders":  [
+                       "ContosoCoffeeDemoDatasetGB\\app",
+                       "UKMakingTaxDigital\\app",
+                       "UKPostcodeGetAddressIO\\app"
+                   ],
+    "testFolders":  [
+                        "UKMakingTaxDigital\\test",
+                        "UKPostcodeGetAddressIO\\test"
+                    ],
+    "appDependencyProbingPaths":  [
+                                      {
+                                          "projects":  "Modules",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      },
+                                      {
+                                          "projects":  "Apps\\W1",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      }
+                                  ],
+    "MemoryLimit":  "16G",
+    "enablePerTenantExtensionCop":  false
+}

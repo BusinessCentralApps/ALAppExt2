@@ -1,0 +1,34 @@
+﻿{
+    "country":  "dk",
+    "appFolders":  [
+                       "C52012DataMigration\\app",
+                       "ContosoCoffeeDemoDatasetDK\\app",
+                       "DKCore\\app",
+                       "FIK\\app",
+                       "ImportDKPayroll\\app",
+                       "OIOUBL\\app",
+                       "VATReportsDK\\app"
+                   ],
+    "testFolders":  [
+                        "C52012DataMigration\\test",
+                        "DKCore\\test",
+                        "FIK\\test",
+                        "ImportDKPayroll\\test",
+                        "OIOUBL\\test",
+                        "VATReportsDK\\test"
+                    ],
+    "appDependencyProbingPaths":  [
+                                      {
+                                          "projects":  "Modules",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      },
+                                      {
+                                          "projects":  "Apps\\W1",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      }
+                                  ],
+    "MemoryLimit":  "16G",
+    "enablePerTenantExtensionCop":  false
+}

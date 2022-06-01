@@ -1,0 +1,39 @@
+﻿{
+    "country":  "in",
+    "appFolders":  [
+                       "INDataMigration\\app",
+                       "INFADepreciation\\app",
+                       "INGateEntry\\app",
+                       "INGST\\app",
+                       "INReports\\app",
+                       "INTaxBase\\app",
+                       "INTCS\\app",
+                       "INTDS\\app",
+                       "INVoucherInterface\\app",
+                       "QRGeneration\\app"
+                   ],
+    "testFolders":  [
+                        "INFADepreciation\\test",
+                        "INGateEntry\\test",
+                        "INGST\\test",
+                        "INReports\\test",
+                        "INTaxBase\\test",
+                        "INTCS\\test",
+                        "INTDS\\test",
+                        "INVoucherInterface\\test"
+                    ],
+    "appDependencyProbingPaths":  [
+                                      {
+                                          "projects":  "Modules",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      },
+                                      {
+                                          "projects":  "Apps\\W1",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      }
+                                  ],
+    "MemoryLimit":  "16G",
+    "enablePerTenantExtensionCop":  false
+}

@@ -1,0 +1,25 @@
+﻿{
+    "country":  "fr",
+    "appFolders":  [
+                       "ContosoCoffeeDemoDatasetFR\\app",
+                       "HybridBCLast_FR\\app",
+                       "Onprem Permissions FR\\app"
+                   ],
+    "testFolders":  [
+                        "HybridBCLast_FR\\test"
+                    ],
+    "appDependencyProbingPaths":  [
+                                      {
+                                          "projects":  "Modules",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      },
+                                      {
+                                          "projects":  "Apps\\W1",
+                                          "release_status":  "latestBuild",
+                                          "repo":  "https://github.com/BusinessCentralApps/ALAppExt2"
+                                      }
+                                  ],
+    "MemoryLimit":  "16G",
+    "enablePerTenantExtensionCop":  false
+}
