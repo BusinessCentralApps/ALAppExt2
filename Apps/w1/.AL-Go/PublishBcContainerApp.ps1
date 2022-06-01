@@ -2,16 +2,19 @@ Param(
     [Hashtable]$parameters
 )
 
-$filename = [System.IO.Path]::GetFileName($parameters.appFile)
-if ($filename -like "Modules-main-TestApps-*.*.*.*.zip") {
+$parameters.appfile | Out-Host
+
+$systemAppFile = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileName($_) -like "Microsoft_System Application_*.*.*.*.app" }
+$ModulesTestApps = $parameters.appfile | Where-Object { [System.IO.Path]::GetFileName($_) -like "Modules-main-TestApps-*.*.*.*.zip" }
+if ($systemAppFile) {
+    $includeOnlyAppIds = $parameters.includeOnlyAppIds
+    $remainingAppFiles = $parameters.appfile | Where-Object { $_ -ne $systemAppFile }
+    $parameters.AppFile = $systemAppFile
     $parameters.includeOnlyAppIds = @()
-}
 
-Publish-BcContainerApp @parameters
+    Publish-BcContainerApp @parameters
 
-if ($filename -like "Microsoft_System Application_*.*.*.*.app") {
-
-    Copy-Item -Path $parameters.appFile -Destination (Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my")
+    Copy-Item -Path $systemAppFile -Destination (Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my")
 
     # Copy necessary apps to my folder
     Invoke-ScriptInBcContainer -containerName $parameters.ContainerName -scriptblock {
@@ -39,15 +42,23 @@ if ($filename -like "Microsoft_System Application_*.*.*.*.app") {
 
     Write-Host "Publishing Base Application"
     $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Base Application.app"
-    $parameters.includeOnlyAppIds = @()
     Publish-BcContainerApp @parameters
 
     Write-Host "Publishing Application"
     $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Application.app"
     Publish-BcContainerApp @parameters
+
+    $parameters.AppFile = $remainingAppFiles
+    $parameters.includeOnlyAppIds = $includeOnlyAppIds
+    Publish-BcContainerApp @parameters
 }
-elseif ($filename -like "Modules-main-TestApps-*.*.*.*.zip") {
+elseif ($ModulesTestApps) {
+    Publish-BcContainerApp @parameters
+
     Write-Host "Publishing Tests-TestLibraries"
     $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Tests-TestLibraries.app"
+    Publish-BcContainerApp @parameters
+}
+else {
     Publish-BcContainerApp @parameters
 }
