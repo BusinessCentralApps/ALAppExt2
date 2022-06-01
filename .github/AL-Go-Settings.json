@@ -2,5 +2,6 @@
     "type":  "PTE",
     "templateUrl":  "https://github.com/freddydk/AL-Go-PTE@main",
     "bcContainerHelperVersion":  "dev",
-    "runs-on":  "bc-build"
+    "runs-on":  "bc-build",
+    "UsePsSession":  false
 }
