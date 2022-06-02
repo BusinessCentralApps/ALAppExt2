@@ -1,0 +1,66 @@
+﻿[
+    {
+        "Method":  "VerifyFAStockUponNewFAPurchaseStraightLine",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationDecliningBalance",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationStraightLine",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationDecliningBalanceAddlDep",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationDecliningBalanceNormalDepFirstYearHalfUtilize",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationDecliningBalanceAddlDepFirstYearHalfUtilize",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationDecliningBalanceBlockAllAssetSoldBelowWDV",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationDecliningBalanceBlockAllAssetSoldAboveWDV",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationDecliningBalanceBlockOneAssetSoldAboveWDV",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationDecliningBalanceBlockOneAssetSoldBelowWDV",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationDecliningBalanceAfterRevaluation",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyFAStockUponNewFAPurchaseWithCompanyDepBook",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationDecliningBalanceWithCompanyDepBook",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationStraightLineSeasonalWithCompanyDepBook",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationStraightLineNonSeasonalWithCompanyDepBook",
+        "CodeunitName":  "FA Depreciation"
+    },
+    {
+        "Method":  "VerifyDepreciationStraightLineWithResidualWithCompanyDepBook",
+        "CodeunitName":  "FA Depreciation"
+    }
+]

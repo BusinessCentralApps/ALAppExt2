@@ -1,0 +1,122 @@
+﻿[
+    {
+        "Method":  "PostFromGateEntryInwardWithPurchaseOrder",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "CheckSourceNoValidationOnGateEntryInwardForm",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "CheckPostedGateEntriesInwardStatus",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryInwardWithDifferentDates",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryInwardWithDifferentTime",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "VerifyGetGateEntryLinesOnPurchaseOrder",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "VerifyAttachedGateEntryLinesOnPurchaseOrder",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "VerifyAssistEditButtonOnGateEntryInwardForm",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "VerifyAttachedGateEntryLinesOnPurchaseInvoice",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "VerifyGetGateEntryLinesOnPurchaseInvoice",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryOutward",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "VerifyAssistEditButtonOnGateEntryOutwardForm",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryOutwardWithSalesShipment",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryOutwardWithDifferentDate",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryOutwardWithDifferentTime",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryInwardForSalesReturnOrder",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "VerifySourceNoLookupWithSourceTypeSalesReturnOrder",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryInForSalesRetrnOrdWithAttchedEntries",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "VerifySourceNoLookUpOnInwardGateEntrySubform",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryOutwardWithTransferShipment",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryInwardWithTransferReceipt",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryInTrnsferRcptWithGetGateEntryLines",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "PostFromGateEntryInTrnsferRcptWithAttchedPostedEntrs",
+        "CodeunitName":  "Test Gate Entry"
+    },
+    {
+        "Method":  "VerifyPostedGateEntryAttachmentInPurchaseOrder",
+        "CodeunitName":  "Test Gate Entry Attachments"
+    },
+    {
+        "Method":  "VerifyPostedGateEntryAttachmentInSalesReturnOrder",
+        "CodeunitName":  "Test Gate Entry Attachments"
+    },
+    {
+        "Method":  "PostFromGateEntryInWhseRcptWithAttachedEntries",
+        "CodeunitName":  "Test Gate Entry Attachments"
+    },
+    {
+        "Method":  "VerifyPostedGateEntryAttachmentInTransferReceipt",
+        "CodeunitName":  "Test Gate Entry Attachments"
+    },
+    {
+        "Method":  "VerifyDeletedGateEntryAttachmentInTransferReceipt",
+        "CodeunitName":  "Test Gate Entry Attachments"
+    },
+    {
+        "Method":  "VerifyDeletedGateEntryAttachmentInPurchaseOrder",
+        "CodeunitName":  "Test Gate Entry Attachments"
+    },
+    {
+        "Method":  "VerifyDeletedGateEntryAttachmentInSalesReturnOrd",
+        "CodeunitName":  "Test Gate Entry Attachments"
+    }
+]

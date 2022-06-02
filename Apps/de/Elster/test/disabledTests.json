@@ -1,0 +1,146 @@
+﻿[
+    {
+        "Method":  "OnPostDataItemCreateXMLFileVATAdvNotif",
+        "CodeunitName":  "Elster Report UT"
+    },
+    {
+        "Method":  "OnPostDataItemTransmitXMLFileVATAdvNotif",
+        "CodeunitName":  "Elster Report UT"
+    },
+    {
+        "Method":  "OnAfterGetRecordTaxOfficeCreateXMLFileVATAdvNotifError",
+        "CodeunitName":  "Elster Report UT"
+    },
+    {
+        "Method":  "OnAfterGetRecordXMLExistCreateXMLFileVATAdvNotifError",
+        "CodeunitName":  "Elster Report UT"
+    },
+    {
+        "Method":  "OnAfterGetRecordStartDateCreateXMLFileVATAdvNotifError",
+        "CodeunitName":  "Elster Report UT"
+    },
+    {
+        "Method":  "OnAfterGetRecordVATRepCreateXMLFileVATAdvNotifError",
+        "CodeunitName":  "Elster Report UT"
+    },
+    {
+        "Method":  "CreateXMLFile_KZ37_Kz50",
+        "CodeunitName":  "Elster Report UT"
+    },
+    {
+        "Method":  "CreateXMLFile_KZ21Order",
+        "CodeunitName":  "Elster Report UT"
+    },
+    {
+        "Method":  "ShowAmountsFromTheCreatedXMLFile",
+        "CodeunitName":  "Elster Report UT"
+    },
+    {
+        "Method":  "OnInsertVATStatNameError",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CalcTaxFiguresRowNoContinuedSalesVATAdvNotif",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CalcTaxFiguresRowNoTotalLineSalesVATAdvNotif",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CalcTaxFiguresRowNoTotalLineTwoSalesVATAdvNotif",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CalcTaxFiguresRowNoTotalLineThreeSalesVATAdvNotif",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CalcTaxFigures_Kz37",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CalcTaxFigures_Kz50",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CalcTaxFiguresAmtTypeAmountSalesVATAdvNotif",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CalcTaxFiguresAmtTypeBaseSalesVATAdvNotif",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CalcTaxFiguresAmtTypeUnrealizedAmtSalesVATAdvNotif",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CalcTaxFiguresAmtTypeUnrealizedBaseSalesVATAdvNotif",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CalcTaxFiguresTypeAccountTotalingSalesVATAdvNotif",
+        "CodeunitName":  "Elster Tables UT"
+    },
+    {
+        "Method":  "CreateXMLFileSalesVATAdvNotifList",
+        "CodeunitName":  "Elster Pages UT"
+    },
+    {
+        "Method":  "PrintSalesVATAdvNotifListSalesVATAdvNotifList",
+        "CodeunitName":  "Elster Pages UT"
+    },
+    {
+        "Method":  "DeleteXMLFileSalesVATAdvNotifList",
+        "CodeunitName":  "Elster Pages UT"
+    },
+    {
+        "Method":  "GLVATReconciliationSalesVATAdvNotifList",
+        "CodeunitName":  "Elster Pages UT"
+    },
+    {
+        "Method":  "ShowSalesVATAdvNotifList",
+        "CodeunitName":  "Elster Pages UT"
+    },
+    {
+        "Method":  "CreateXMLFileSalesVATAdvNotifCard",
+        "CodeunitName":  "Elster Pages UT"
+    },
+    {
+        "Method":  "DeleteXMLFileSalesVATAdvNotifCard",
+        "CodeunitName":  "Elster Pages UT"
+    },
+    {
+        "Method":  "PrintSalesVATAdvNotifCard",
+        "CodeunitName":  "Elster Pages UT"
+    },
+    {
+        "Method":  "GLVATReconciliationVATAdvNotifCard",
+        "CodeunitName":  "Elster Pages UT"
+    },
+    {
+        "Method":  "ShowVATAdvNotifCard",
+        "CodeunitName":  "Elster Pages UT"
+    },
+    {
+        "Method":  "Testversion_SalesVATAdvNotificationCardAppAreaBasic",
+        "CodeunitName":  "Elster Pages UT"
+    },
+    {
+        "Method":  "GetProductNameTruncatesLongApplicationVersion",
+        "CodeunitName":  "Elster Codeunits UT"
+    },
+    {
+        "Method":  "VATStatementPreviewWithPurchaseInvoice",
+        "CodeunitName":  "Elster ERM Batch Reports"
+    },
+    {
+        "Method":  "VATStatementPreviewWithSalesInvoice",
+        "CodeunitName":  "Elster ERM Batch Reports"
+    },
+    {
+        "Method":  "ErrorOnCreateXMLFileOnSalesVATAdvNotificationCard",
+        "CodeunitName":  "Elster ERM Batch Reports"
+    }
+]

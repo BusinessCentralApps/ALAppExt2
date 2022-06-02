@@ -1,0 +1,10 @@
+﻿[
+    {
+        "Method":  "UpgradeSetsDetailedCustomerLedgerEntries",
+        "CodeunitName":  "Test Upgrade FR"
+    },
+    {
+        "Method":  "UpgradeSetsDetailedVendorLedgerEntries",
+        "CodeunitName":  "Test Upgrade FR"
+    }
+]
