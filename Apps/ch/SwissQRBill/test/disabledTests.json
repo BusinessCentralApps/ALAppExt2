@@ -266,5 +266,21 @@
     {
         "Method":  "Invoice_Post_WrongCurrency_EUR",
         "CodeunitName":  "Swiss QR-Bill Test Purchases"
+    },
+    {
+        "Method":  "ReportsPageDrillDown_ServiceInvoice",
+        "CodeunitName":  "Swiss QR-Bill Test Print"
+    },
+    {
+        "Method":  "Journal_Scan_VendotNotFound",
+        "CodeunitName":  "Swiss QR-Bill Test Purchases"
+    },
+    {
+        "Method":  "ReportsPageDrillDown_ServiceInvoice",
+        "CodeunitName":  "Swiss QR-Bill Test Print"
+    },
+    {
+        "Method":  "Journal_Scan_VendotNotFound",
+        "CodeunitName":  "Swiss QR-Bill Test Purchases"
     }
 ]
