@@ -43,7 +43,7 @@
                          },
                          {
                              "id":  "b3670666-3f31-4664-8531-a1cb0bdf69fd",
-                             "name":  "Sandbox Cleanup",
+                             "name":  "Environment Cleanup",
                              "publisher":  "Microsoft",
                              "version":  "20.1.0.0"
                          },
