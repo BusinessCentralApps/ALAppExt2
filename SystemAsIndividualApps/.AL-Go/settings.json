@@ -1,0 +1,9 @@
+﻿{
+    "country":  "us",
+    "appFolders":  [
+                       "..\\Modules\\System\\*"
+                   ],
+    "artifact":  "//20.1/base/first",
+    "enablePerTenantExtensionCop":  false,
+    "repoVersion":  "20.1"
+}
