@@ -38,6 +38,13 @@ if ($systemAppFile) {
         }
         Write-Host "Copying Tests-TestLibraries to my path"
         Copy-Item -Path (Get-Item $testLibrariesApp).FullName -Destination "c:\run\my\Microsoft_Tests-TestLibraries.app"
+
+        $testsSMBApp = "C:\Applications.*\Microsoft_Tests-SMB_*.*.*.*.app"
+        if (-not (Test-Path $testsSMBApp)) {
+            $testsSMBApp = "C:\Applications\BaseApp\Test\Microsoft_Tests-SMB.app"
+        }
+        Write-Host "Copying Tests-SMB to my path"
+        Copy-Item -Path (Get-Item $testsSMBApp).FullName -Destination "c:\run\my\Microsoft_Tests-SMB.app"
     }
 
     Write-Host "Publishing Base Application"
@@ -62,6 +69,10 @@ elseif ($ModulesTestApps) {
     Write-Host "Publishing Tests-TestLibraries"
     $parameters.includeOnlyAppIds = $includeOnlyAppIds
     $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Tests-TestLibraries.app"
+    Publish-BcContainerApp @parameters
+
+    Write-Host "Publishing Tests-SMB"
+    $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Tests-SMB.app"
     Publish-BcContainerApp @parameters
 }
 else {
