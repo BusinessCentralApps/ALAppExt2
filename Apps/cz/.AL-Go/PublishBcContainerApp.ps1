@@ -18,33 +18,16 @@ if ($systemAppFile) {
 
     # Copy necessary apps to my folder
     Invoke-ScriptInBcContainer -containerName $parameters.ContainerName -scriptblock {
-        $baseApp = "C:\Applications.*\Microsoft_Base Application_*.*.*.*.app"
-        if (-not (Test-Path $baseApp)) {
-            $baseApp = "C:\Applications\BaseApp\Source\Microsoft_Base Application.app"
-        }
-        Write-Host "Copying Base Application to my path"
-        Copy-Item -Path (Get-Item $baseApp).FullName -Destination "c:\run\my\Microsoft_Base Application.app"
 
-        $application = "C:\Applications.*\Microsoft_Application_*.*.*.*.app"
-        if (-not (Test-Path $application)) {
-            $application = "C:\Applications\Application\Source\Microsoft_Application.app"
+        'Base Application', 'Application','Tests-TestLibraries','Tests-SMB','Tests-Misc' | ForEach-Object {
+            $msApp = "C:\Applications.*\Microsoft_$($_)_*.*.*.*.app"
+            if (-not (Test-Path $msApp)) {
+                $msApp = "C:\Applications\BaseApp\Source\Microsoft_$($_).app"
+            }
+            Write-Host "Copying $_ to my path"
+            Copy-Item -Path (Get-Item $msApp).FullName -Destination "c:\run\my\Microsoft_$($_).app"
+    
         }
-        Write-Host "Copying Application to my path"
-        Copy-Item -Path (Get-Item $application).FullName -Destination "c:\run\my\Microsoft_Application.app"
-
-        $testLibrariesApp = "C:\Applications.*\Microsoft_Tests-TestLibraries_*.*.*.*.app"
-        if (-not (Test-Path $testLibrariesApp)) {
-            $testLibrariesApp = "C:\Applications\BaseApp\Test\Microsoft_Tests-TestLibraries.app"
-        }
-        Write-Host "Copying Tests-TestLibraries to my path"
-        Copy-Item -Path (Get-Item $testLibrariesApp).FullName -Destination "c:\run\my\Microsoft_Tests-TestLibraries.app"
-
-        $testsSMBApp = "C:\Applications.*\Microsoft_Tests-SMB_*.*.*.*.app"
-        if (-not (Test-Path $testsSMBApp)) {
-            $testsSMBApp = "C:\Applications\BaseApp\Test\Microsoft_Tests-SMB.app"
-        }
-        Write-Host "Copying Tests-SMB to my path"
-        Copy-Item -Path (Get-Item $testsSMBApp).FullName -Destination "c:\run\my\Microsoft_Tests-SMB.app"
     }
 
     Write-Host "Publishing Base Application"
@@ -66,14 +49,12 @@ elseif ($ModulesTestApps) {
     $parameters.includeOnlyAppIds = @()
     Publish-BcContainerApp @parameters
 
-    Write-Host "Publishing Tests-TestLibraries"
-    $parameters.includeOnlyAppIds = $includeOnlyAppIds
-    $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Tests-TestLibraries.app"
-    Publish-BcContainerApp @parameters
-
-    Write-Host "Publishing Tests-SMB"
-    $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_Tests-SMB.app"
-    Publish-BcContainerApp @parameters
+    'Tests-TestLibraries','Tests-SMB','Tests-Misc' | ForEach-Object {
+        Write-Host "Publishing $_"
+        $parameters.includeOnlyAppIds = $includeOnlyAppIds
+        $parameters.appFile = Join-Path $bcContainerHelperConfig.hostHelperFolder "Extensions\$($parameters.ContainerName)\my\Microsoft_$($_).app"
+        Publish-BcContainerApp @parameters
+    }
 }
 else {
     Publish-BcContainerApp @parameters
