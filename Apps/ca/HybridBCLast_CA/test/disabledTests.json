@@ -1,0 +1,10 @@
+﻿[
+    {
+        "Method":  "DataExchDefTransformsData",
+        "CodeunitName":  "Test Upgrade CA"
+    },
+    {
+        "Method":  "DataExchDefLoadsData",
+        "CodeunitName":  "Test Upgrade CA"
+    }
+]

@@ -1,0 +1,34 @@
+﻿[
+    {
+        "Method":  "PostFromContraVoucherWithVoucherNarration",
+        "CodeunitName":  "Voucher Interface Tests"
+    },
+    {
+        "Method":  "PostFromMultiLineContraVoucherwithVoucherSetup",
+        "CodeunitName":  "Voucher Interface Tests"
+    },
+    {
+        "Method":  "PostFromContraVoucherWithCompanyInformation",
+        "CodeunitName":  "Voucher Interface Tests"
+    },
+    {
+        "Method":  "ContraVoucherWithDifferentPostingDates",
+        "CodeunitName":  "Voucher Interface Tests"
+    },
+    {
+        "Method":  "ContraVoucherWithCashAndBankAccount",
+        "CodeunitName":  "Voucher Interface Tests"
+    },
+    {
+        "Method":  "VerifyFieldValuesOnVoucherRegisterReport",
+        "CodeunitName":  "Voucher Reports Tests"
+    },
+    {
+        "Method":  "VerifyStaleCheckOnCheckLedgerEntriesWithTDS",
+        "CodeunitName":  "Stale Cheque Tests"
+    },
+    {
+        "Method":  "VerifyStaleCheckOnCheckLedgerEntriesWithTDSComputerCheque",
+        "CodeunitName":  "Stale Cheque Tests"
+    }
+]

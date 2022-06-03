@@ -1,0 +1,14 @@
+﻿[
+    {
+        "Method":  "DIOTCountryRegionData_UI",
+        "CodeunitName":  "MX DIOT UT"
+    },
+    {
+        "Method":  "SetupDIOTConcepts",
+        "CodeunitName":  "DIOT Wizard Tests"
+    },
+    {
+        "Method":  "RunningReportRedirectToWizard",
+        "CodeunitName":  "DIOT Wizard Tests"
+    }
+]

@@ -1,0 +1,18 @@
+﻿[
+    {
+        "Method":  "VerifyPublishersCalledWith14xSource",
+        "CodeunitName":  "Hybrid BC Last Management Test"
+    },
+    {
+        "Method":  "VerifyPublishersCalledWith15xSource",
+        "CodeunitName":  "Hybrid BC Last Management Test"
+    },
+    {
+        "Method":  "VerifyPublishersCalledWith16xSource",
+        "CodeunitName":  "Hybrid BC Last Management Test"
+    },
+    {
+        "Method":  "TestStatusIsSetToUpgradePending",
+        "CodeunitName":  "Hybrid BC Last E2E Test"
+    }
+]
