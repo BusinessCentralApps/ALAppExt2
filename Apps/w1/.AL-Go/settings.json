@@ -90,6 +90,6 @@
                                           "release_status":  "latestBuild"
                                       }
                                   ],
-    "MemoryLimit":  "16G",
+    "MemoryLimit":  "24G",
     "enablePerTenantExtensionCop":  false
 }
